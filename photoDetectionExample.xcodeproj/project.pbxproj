@@ -20,9 +20,11 @@
 		4BEC54C329647CCE0068FAB3 /* efficientdet_lite0.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4BEC54BF29647CCE0068FAB3 /* efficientdet_lite0.tflite */; };
 		4BEC54C429647CCE0068FAB3 /* efficientdet_lite1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4BEC54C029647CCE0068FAB3 /* efficientdet_lite1.tflite */; };
 		4BEC54C629647D0B0068FAB3 /* InferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC54C529647D0B0068FAB3 /* InferenceViewController.swift */; };
+		532878C08D0687ECF674D3FC /* Pods_photoDetectionExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E15017A62A9F433ABA142CE /* Pods_photoDetectionExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B5E312C0795EB931E56975 /* Pods-photoDetectionExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoDetectionExample.release.xcconfig"; path = "Target Support Files/Pods-photoDetectionExample/Pods-photoDetectionExample.release.xcconfig"; sourceTree = "<group>"; };
 		4BEC54A129647B9B0068FAB3 /* photoDetectionExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.dsym; path = photoDetectionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEC54A429647B9B0068FAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BEC54A629647B9B0068FAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		4BEC54BF29647CCE0068FAB3 /* efficientdet_lite0.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = efficientdet_lite0.tflite; sourceTree = "<group>"; };
 		4BEC54C029647CCE0068FAB3 /* efficientdet_lite1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = efficientdet_lite1.tflite; sourceTree = "<group>"; };
 		4BEC54C529647D0B0068FAB3 /* InferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InferenceViewController.swift; sourceTree = "<group>"; };
+		4E15017A62A9F433ABA142CE /* Pods_photoDetectionExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoDetectionExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9119DD4A928366745C5BF6E /* Pods-photoDetectionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoDetectionExample.debug.xcconfig"; path = "Target Support Files/Pods-photoDetectionExample/Pods-photoDetectionExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532878C08D0687ECF674D3FC /* Pods_photoDetectionExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +62,7 @@
 				4BEC54A329647B9B0068FAB3 /* photoDetectionExample */,
 				4BEC54A229647B9B0068FAB3 /* Products */,
 				FBBFB838C47A968BE95FC79F /* Pods */,
+				E42829BF50D311726C273BE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +103,19 @@
 			path = TFLite;
 			sourceTree = "<group>";
 		};
+		E42829BF50D311726C273BE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E15017A62A9F433ABA142CE /* Pods_photoDetectionExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBBFB838C47A968BE95FC79F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				E9119DD4A928366745C5BF6E /* Pods-photoDetectionExample.debug.xcconfig */,
+				09B5E312C0795EB931E56975 /* Pods-photoDetectionExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -111,6 +127,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BEC54B529647B9B0068FAB3 /* Build configuration list for PBXNativeTarget "photoDetectionExample" */;
 			buildPhases = (
+				D0172889B17AA6FBD38FF7AC /* [CP] Check Pods Manifest.lock */,
 				4BEC549D29647B9B0068FAB3 /* Sources */,
 				4BEC549E29647B9B0068FAB3 /* Frameworks */,
 				4BEC549F29647B9B0068FAB3 /* Resources */,
@@ -173,6 +190,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0172889B17AA6FBD38FF7AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-photoDetectionExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BEC549D29647B9B0068FAB3 /* Sources */ = {
@@ -326,6 +368,7 @@
 		};
 		4BEC54B629647B9B0068FAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9119DD4A928366745C5BF6E /* Pods-photoDetectionExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +398,7 @@
 		};
 		4BEC54B729647B9B0068FAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B5E312C0795EB931E56975 /* Pods-photoDetectionExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

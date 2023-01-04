@@ -28,11 +28,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         maxResults: ConstantsDefault.maxResults
     )
     
+    private var label = UILabel()
+    
     private var result: Result?
     private var inferenceViewController: InferenceViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(label)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -89,6 +93,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     func detect(pixelBuffer: CVPixelBuffer) {
+//        let time = Date.
         result = self.objectDetectionHelper?.detect(frame: pixelBuffer)
         
         guard let displayResult = result else {
@@ -150,8 +155,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
             print("name: \(objectOverlay.name)")
             print("nameStringSize: \(objectOverlay.nameStringSize)")
-            print("color: \(objectOverlay.color)")
-            print("font: \(objectOverlay.font)")
         }
         
     }
